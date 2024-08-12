@@ -1,0 +1,125 @@
+.product_variant {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.product_color_title, .product_size_title, .product_quantity_title {
+    line-height: 24px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #3f3a3a;
+}
+
+.product_color_selector {
+    margin-left: 21px;
+    display: flex;
+}
+
+.product_color {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+    border: 6px solid white;
+    box-shadow: 0px 0px 1px #bbbbbb;
+    cursor: pointer;
+}
+
+.product_color + .product_color {
+    margin-left: 15px;
+}
+
+.product_color_selected {
+    outline: 1px solid #979797;
+}
+
+.product_quantity_selector {
+    margin-left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    height: 44px;
+    padding: 0 10px;
+    border: 1px solid #979797;
+    font-size: 20px;
+}
+
+.product_size {
+    width: 34px;
+    height: 34px;
+    background-color: #ececec;
+    color: #3f3a3a;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'Noto Sans TC';
+}
+
+.product_size_selector {
+    margin-left: 22px;
+    display: flex;
+}
+
+.product_size + .product_size {
+    margin-left: 20px;
+}
+
+.product_size_selected {
+    background-color: black;
+    color: white;
+}
+
+.product_size_disabled {
+    opacity: 0.25;
+    cursor: not-allowed;
+}
+
+
+.product_quantity_value {
+    font-family: 'Noto Sans TC';
+    color: rgb(255, 209, 5);
+}
+
+.product_quantity_minus {
+    background-image: url('/assets/minus.png');
+}
+
+
+.product_quantity_add {
+    background-image: url('/assets/add.png');
+}
+
+.product_quantity_minus, .product_quantity_add {
+    cursor: pointer;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+}
+
+.product_add_to_cart_button {
+    width: 100%;
+    height: 60px;
+    margin-top: 29px;
+    border: solid 1px #979797;
+    background-color: black;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1279px) {
+    .product_quantity_title {
+        display: none;
+    }
+
+    .product_quantity_selector {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 30px;
+    }
+}

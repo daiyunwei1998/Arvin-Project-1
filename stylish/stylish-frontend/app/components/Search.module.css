@@ -1,0 +1,17 @@
+.header_search {
+    height: 40px;
+    width: 214px;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    border-radius: 20px;
+    padding: 6px 45px 6px 20px;
+    border: solid 1px #979797;
+    background-image: url('/assets/search.png');
+    background-size: 44px;
+    background-position: 160px center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(255, 209, 5);
+}

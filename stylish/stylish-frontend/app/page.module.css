@@ -1,0 +1,21 @@
+.products {
+  max-width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 24px;
+}
+.product{
+  width:calc((100% - 120px) / 3);
+  margin: 0 20px 50px;
+  flex-shrink: 0;
+}
+
+
+
+@media screen and (max-width: 1279px) {
+  .product {
+    width: calc((100% - 12px) / 2);
+    margin: 0 3px 24px;
+  }
+}

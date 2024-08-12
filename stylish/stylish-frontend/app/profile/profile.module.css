@@ -1,0 +1,84 @@
+.profile {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 65px 0 164px;
+}
+
+.profile_title {
+    line-height: 30px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: rgb(255, 209, 5);
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans TC';
+    margin-bottom: 20px;
+}
+
+.profile_title::after {
+    content: '';
+    height: 1px;
+    flex-grow: 1;
+    background-color: #3f3a3a;
+    margin-left: 64px;
+}
+
+.profile_content {
+    display: flex;
+    align-items: center; /* This centers items vertically */
+}
+
+.user_info {
+    flex-grow: 1; /* This allows the user_info to take up all available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This centers the content vertically */
+    align-items: center; /* This centers the content horizontally */
+    padding-left: 20px; /* Add some space between the image and user info */
+}
+
+.name {
+    line-height: 38px;
+    font-size: 32px;
+    letter-spacing: 6.4px;
+    color: #3f3a3a;
+    font-family: 'Noto Sans TC';
+    text-align: center; /* Center the text */
+}
+
+
+.email {
+    line-height: 24px;
+    margin-top: 16px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #bababa;
+    font-family: 'Noto Sans TC';
+    text-align: center; /* Center the text */
+}
+
+.options_container {
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+
+.options {
+    line-height: 12px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #bababa;
+    font-family: 'Noto Sans TC';
+    text-align: center;
+    cursor: pointer; 
+}
+
+.options:hover {
+    color: rgb(255, 209, 5);
+}
+
+@media screen and (max-width: 1279px) {
+    
+}
